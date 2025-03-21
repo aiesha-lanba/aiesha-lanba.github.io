@@ -58,15 +58,15 @@ nav {
 
 .team-member {
     background: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .team-member img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
