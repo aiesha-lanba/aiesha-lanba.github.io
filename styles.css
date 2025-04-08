@@ -111,7 +111,7 @@ th {
 }
 
 footer {
-    background-color: #7D0A0A;
+    background-color: #2B2B2B;
     color: white;
     padding: 20px 40px;
 }
@@ -139,6 +139,7 @@ footer {
 
 .footer-center p {
     margin: 5px 0;
+    font-size: 14px;
 }
 
 .footer-right a {
@@ -150,4 +151,3 @@ footer {
 .footer-right a:hover {
     text-decoration: underline;
 }
-
