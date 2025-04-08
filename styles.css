@@ -41,11 +41,11 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 500; /* medium weight to minimize jump */
+    font-weight: 500; 
     padding-bottom: 2px;
-    border-bottom: 2px solid transparent; /* reserve space for underline */
+    border-bottom: 2px solid transparent; 
     display: inline-block;
-    transition: all 0.2s ease; /* smooth hover/active effect */
+    transition: all 0.2s ease; 
 }
 
 .nav-links li a:hover {
