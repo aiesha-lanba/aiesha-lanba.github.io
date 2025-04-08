@@ -40,7 +40,11 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    font-weight: normal; /* Make all nav links normal weight by default */
+    font-weight: 500; /* medium weight to minimize jump */
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent; /* reserve space for underline */
+    display: inline-block;
+    transition: all 0.2s ease; /* smooth hover/active effect */
 }
 
 .nav-links li a:hover {
@@ -48,7 +52,8 @@ nav {
 }
 
 .nav-links li a.active {
-    font-weight: bold; /* Only active link is bold */
+    font-weight: 700; /* bold */
+    border-bottom: 2px solid white; /* underline effect */
 }
 
 .team-container {
