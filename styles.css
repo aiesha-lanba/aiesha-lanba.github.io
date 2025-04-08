@@ -53,8 +53,8 @@ nav {
 }
 
 .nav-links li a.active {
-    font-weight: 700; /* bold */
-    border-bottom: 2px solid white; /* underline effect */
+    font-weight: 700; 
+    border-bottom: 2px solid white; 
 }
 
 .team-container {
