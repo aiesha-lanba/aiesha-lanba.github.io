@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #EEEEEE;
+    background-color: #31363F;
 }
 
 nav {
-    background-color: #7D0A0A;
+    background-color: #76ABAE;
     padding: 15px 0;
 }
 
@@ -110,8 +110,8 @@ th {
 }
 
 footer {
-    background-color: #2B2B2B;
-    color: white;
+    background-color: #EEEEEE;
+    color: #222831;
     padding: 24px 40px;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -144,7 +144,7 @@ footer {
 }
 
 .footer-right a {
-    color: white;
+    color: #222831;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
