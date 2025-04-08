@@ -1,48 +1,51 @@
-<div class="content-container">
-    <h1>Process</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Vendi</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="electrical.html">Electrical</a></li>
+                <li><a href="mechanical.html">Mechanical</a></li>
+                <li><a href="process.html" class="active">Process</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <h2>Project Motivation</h2>
-    <p>
-        Our team identified a common challenge faced by students and faculty on campus: a lack of accessible, healthy food options during late hours when dining halls are closed. Traditional vending machines often stock unhealthy options and suffer from poor inventory management, leading to waste and unmet demand. To address this, we envisioned a smart vending machine that would not only provide better snack options but also track item popularity and usage data for continual optimization.
-    </p>
-
-    <h2>Brainstorming and Planning</h2>
-    <p>
-        We began the project by brainstorming potential solutions to the food accessibility issue and ultimately selected the vending machine concept because of its feasibility, real-world applicability, and opportunity for cross-disciplinary collaboration. From March 16–18, we finalized our design concept, assigned roles based on individual expertise, and ordered key materials such as the Arduino Mega 2560, servo motors, and polycarbonate sheets.
-    </p>
-
-    <h2>Mechanical and Structural Design</h2>
-    <p>
-        The vending machine frame was constructed using black and transparent polycarbonate sheets, reinforced with metal corner brackets for durability. The modular design allows for easy maintenance and part replacement. A hinged access panel on the front and back enables efficient reloading and electrical troubleshooting. Internally, spiral springs driven by servo motors function as the dispensing mechanism, securely holding and rotating to release snacks.
-    </p>
-
-    <h2>Electrical Integration</h2>
-    <p>
-        We utilized four high-torque servo motors connected to the Arduino board to control each dispensing coil. An IR sensor monitors whether an item has been successfully dispensed. The entire system is powered via an AC-to-DC adapter connected to the wall, regulated by a built-in buck converter on the Arduino to distribute 5V to all components efficiently.
-    </p>
-
-    <h2>User Interface and Software</h2>
-    <p>
-        A 1x4 membrane keypad was installed on the front panel to allow users to select snacks. The Arduino interprets these inputs and triggers the appropriate motor. Software logic was developed to ensure that only one item is dispensed at a time, with automated retry functionality if an item is not detected. Additionally, the software includes inventory tracking and stock alerts through LED strip color changes.
-    </p>
-
-    <h2>Data Collection and Analytics</h2>
-    <p>
-        Our system records each transaction with a timestamp and logs the item selected, which allows us to analyze which products are most popular. We use a hashmap to track inventory levels. When stock drops below a set threshold, the LED light strip turns red to signal restocking is needed. This feature improves both operational efficiency and user satisfaction.
-    </p>
-
-    <h2>Website and Documentation</h2>
-    <p>
-        To document our progress and showcase the final product, we created a GitHub Pages portfolio site. The site includes technical documentation, visuals, team bios, and a demonstration video. This not only helped us reflect on our work but also provided a professional platform to share our project.
-    </p>
-
-    <h2>Challenges and Adaptation</h2>
-    <p>
-        Throughout the project, we faced technical difficulties, such as managing power limitations and learning new hardware and programming tools. Our team adapted quickly, leaning on our EP mentors and reallocating tasks based on strengths. We worked primarily in the Standard study lounge and had backup spaces planned in case of disruptions. This flexibility helped us stay on schedule and meet all project milestones.
-    </p>
-
-    <h2>Final Reflection</h2>
-    <p>
-        The vending machine project was a valuable learning experience that simulated real-world engineering challenges. It demanded hands-on application of mechanical, electrical, and software principles, while reinforcing project management, system integration, and teamwork. Most importantly, it showcased our ability to transform classroom concepts into a tangible, functional product that addresses a real campus need.
-    </p>
-</div>
+    <div class="content-container">
+        <h1>Process</h1>
+        <p>
+            Our engineering project focused on building a cross-disciplinary <strong>vending machine</strong> that addresses the lack of healthy snack access on campus, especially during off-hours.
+        </p>
+        <p>
+            The process began with <strong>design brainstorming and team role assignments</strong>, followed by ordering essential components like servo motors, polycarbonate sheets, and Arduino boards. We <strong>constructed a durable frame</strong> with modular polycarbonate panels, integrated a <strong>spiral spring dispensing system</strong> powered by high-torque servos, and assembled the internal circuitry.
+        </p>
+        <p>
+            We built a <strong>membrane keypad interface</strong> for user selection and connected it to an <strong>Arduino Mega 2560</strong>, which controls servo motion, sensors, and LED feedback. An <strong>IR sensor</strong> ensures successful item dispensing, and a toggle switch allows for convenient reloading.
+        </p>
+        <p>
+            The project involved extensive <strong>software development</strong>, implementing real-time keypad input, automatic retry logic, and inventory tracking with LED alerts. We documented our findings, created a demo video, and launched a portfolio website to showcase our progress.
+        </p>
+        <p>
+            This experience provided valuable lessons in system integration, project management, and multi-disciplinary collaboration—mirroring real-world engineering challenges.
+        </p>
+    </div>
+</body>
+</html>
