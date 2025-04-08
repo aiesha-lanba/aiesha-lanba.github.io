@@ -1,7 +1,8 @@
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    text-align: center;
 }
 
 nav {
@@ -39,6 +40,7 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: normal; /* Make all nav links normal weight by default */
 }
 
 .nav-links li a:hover {
@@ -46,12 +48,7 @@ nav {
 }
 
 .nav-links li a.active {
-    font-weight: bold;
-}
-
-.nav-links a {
-    font-weight: normal; 
-    text-decoration: none;
+    font-weight: bold; /* Only active link is bold */
 }
 
 .team-container {
