@@ -112,7 +112,9 @@ th {
 footer {
     background-color: #2B2B2B;
     color: white;
-    padding: 20px 40px;
+    padding: 24px 40px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
 }
 
 .footer-container {
@@ -132,19 +134,20 @@ footer {
 }
 
 .footer-logo {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 .footer-center p {
-    margin: 5px 0;
-    font-size: 14px;
+    margin: 6px 0;
+    font-size: 15px;
 }
 
 .footer-right a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .footer-right a:hover {
