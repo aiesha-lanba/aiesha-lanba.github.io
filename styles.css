@@ -46,6 +46,15 @@ nav {
     text-decoration: underline;
 }
 
+.nav-links li a.active {
+    font-weight: bold;
+}
+
+.nav-links a {
+    font-weight: bold; 
+    text-decoration: none;
+}
+
 .team-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -80,9 +89,5 @@ nav {
     margin: 2px 0;
     font-size: 14px;
     color: #555;
-}
-
-.nav-links li a.active {
-    font-weight: bold;
 }
 
