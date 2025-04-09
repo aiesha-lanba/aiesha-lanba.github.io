@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>About Us - Vendi</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://vercel.com/font/geist-sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav>
@@ -16,135 +19,143 @@
                 <li><a href="electrical.html">Electrical</a></li>
                 <li><a href="mechanical.html">Mechanical</a></li>
                 <li><a href="process.html">Process</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html" class="active">About Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <h1>Meet Our Team</h1>
-    
-    <div class="team-container">
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/aiesha-lanba/" target="_blank">
-                <img src="headshotPhotos/Aiesha.JPG" alt="Aiesha Lanba">
-            </a>
-            <h3>Aiesha Lanba</h3>
-            <p>Role: Web Developer</p>
-            <p>Major: Data Science</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+    <div class="page-content">
+        <h1 data-aos="fade-down">Meet Our Team</h1>
+        
+        <section data-aos="fade-up">
+            <h2>About Vendi</h2>
+            <p>We are a team of passionate engineering students at UC Berkeley, studying various fields of engineering.</p>
+        </section>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/charles-oh-berkeley2028/" target="_blank">
-                <img src="headshotPhotos/Charles.JPG" alt="Charles Oh">
-            </a>
-            <h3>Charles Oh</h3>
-            <p>Role: Hardware Lead</p>
-            <p>Major: Civil Engineering</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+        <section data-aos="fade-up">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/aiesha-lanba/" target="_blank">
+                        <img src="headshotPhotos/Aiesha.JPG" alt="Aiesha Lanba">
+                    </a>
+                    <h3>Aiesha Lanba</h3>
+                    <p>Web Developer</p>
+                    <p class="member-details">Data Science '28</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/christian-yim/" target="_blank">
-                <img src="headshotPhotos/Christian.JPG" alt="Christian Yim">
-            </a>
-            <h3>Christian Yim</h3>
-            <p>Role: Software Developer</p>
-            <p>Major: Computer Science and Music</p>
-            <p>Graduation Year: 2027</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/charles-oh-berkeley2028/" target="_blank">
+                        <img src="headshotPhotos/Charles.JPG" alt="Charles Oh">
+                    </a>
+                    <h3>Charles Oh</h3>
+                    <p>Hardware Lead</p>
+                    <p class="member-details">Civil Engineering '28</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/clairelin06/" target="_blank">
-                <img src="headshotPhotos/Claire.JPG" alt="Claire Lin">
-            </a>
-            <h3>Claire Lin</h3>
-            <p>Role: Hardware and Design</p>
-            <p>Major: Mechanical Engineering</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/christian-yim/" target="_blank">
+                        <img src="headshotPhotos/Christian.JPG" alt="Christian Yim">
+                    </a>
+                    <h3>Christian Yim</h3>
+                    <p>Software Developer</p>
+                    <p class="member-details">Computer Science and Music '27</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/gabriel-rayos/" target="_blank">
-                <img src="headshotPhotos/Gabriel.JPG" alt="Gabriel Rayos">
-            </a>
-            <h3>Gabriel Rayos</h3>
-            <p>Role: Hardware and Design</p>
-            <p>Major: Mechanical Engineering</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/clairelin06/" target="_blank">
+                        <img src="headshotPhotos/Claire.JPG" alt="Claire Lin">
+                    </a>
+                    <h3>Claire Lin</h3>
+                    <p>Hardware and Design</p>
+                    <p class="member-details">Mechanical Engineering '28</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/justin-t-choi/" target="_blank">
-                <img src="headshotPhotos/Justin.JPG" alt="Justin Choi">
-            </a>
-            <h3>Justin Choi</h3>
-            <p>Role: Electrical Development Lead</p>
-            <p>Major: Mechanical Engineering</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/gabriel-rayos/" target="_blank">
+                        <img src="headshotPhotos/Gabriel.JPG" alt="Gabriel Rayos">
+                    </a>
+                    <h3>Gabriel Rayos</h3>
+                    <p>Hardware and Design</p>
+                    <p class="member-details">Mechanical Engineering '28</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/mglee/" target="_blank">
-                <img src="headshotPhotos/Michaela.JPG" alt="Michaela Lee">
-            </a>
-            <h3>Michaela Lee</h3>
-            <p>Role: Web Developer</p>
-            <p>Major: Applied Math and Data Science</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/justin-t-choi/" target="_blank">
+                        <img src="headshotPhotos/Justin.JPG" alt="Justin Choi">
+                    </a>
+                    <h3>Justin Choi</h3>
+                    <p>Electrical Development Lead</p>
+                    <p class="member-details">Mechanical Engineering '28</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/michael-chandler-a34123283/" target="_blank">
-                <img src="headshotPhotos/Michael.JPG" alt="Michael Chandler">
-            </a>
-            <h3>Michael Chandler</h3>
-            <p>Role: Software Developer</p>
-            <p>Major: Physics and Data Science</p>
-            <p>Graduation Year: 2027</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/mglee/" target="_blank">
+                        <img src="headshotPhotos/Michaela.JPG" alt="Michaela Lee">
+                    </a>
+                    <h3>Michaela Lee</h3>
+                    <p>Web Developer</p>
+                    <p class="member-details">Applied Math and Data Science '28</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/tamoghna-ediga/" target="_blank">
-                <img src="headshotPhotos/Nag.JPG" alt="Nag Ediga">
-            </a>
-            <h3>Nag Ediga</h3>
-            <p>Role: Hardware and Design</p>
-            <p>Major: Mechanical Engineering</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/michael-chandler-a34123283/" target="_blank">
+                        <img src="headshotPhotos/Michael.JPG" alt="Michael Chandler">
+                    </a>
+                    <h3>Michael Chandler</h3>
+                    <p>Software Developer</p>
+                    <p class="member-details">Physics and Data Science '27</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/sean-li-berkeley/" target="_blank">
-                <img src="headshotPhotos/Sean.JPG" alt="Sean Li">
-            </a>
-            <h3>Sean Li</h3>
-            <p>Role: Web Developer</p>
-            <p>Major: Economics and Data Science</p>
-            <p>Graduation Year: 2027</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/tamoghna-ediga/" target="_blank">
+                        <img src="headshotPhotos/Nag.JPG" alt="Nag Ediga">
+                    </a>
+                    <h3>Nag Ediga</h3>
+                    <p>Hardware and Design</p>
+                    <p class="member-details">Mechanical Engineering '28</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/stephen-h-hung/" target="_blank">
-                <img src="headshotPhotos/Stephen.JPG" alt="Stephen Hung">
-            </a>
-            <h3>Stephen Hung</h3>
-            <p>Role: Project Lead</p>
-            <p>Major: EECS</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/sean-li-berkeley/" target="_blank">
+                        <img src="headshotPhotos/Sean.JPG" alt="Sean Li">
+                    </a>
+                    <h3>Sean Li</h3>
+                    <p>Web Developer</p>
+                    <p class="member-details">Economics and Data Science '27</p>
+                </div>
 
-        <div class="team-member">
-            <a href="https://www.linkedin.com/in/sebastiantlopez/" target="_blank">
-                <img src="headshotPhotos/Sebastian.JPG" alt="Sebastian Lopez">
-            </a>
-            <h3>Sebastian Lopez</h3>
-            <p>Role: Hardware Design and Electrical Development</p>
-            <p>Major: Civil Engineering</p>
-            <p>Graduation Year: 2028</p>
-        </div>
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/stephen-h-hung/" target="_blank">
+                        <img src="headshotPhotos/Stephen.JPG" alt="Stephen Hung">
+                    </a>
+                    <h3>Stephen Hung</h3>
+                    <p>Project Lead</p>
+                    <p class="member-details">EECS '28</p>
+                </div>
+
+                <div class="team-member" data-aos="fade-up">
+                    <a href="https://www.linkedin.com/in/sebastiantlopez/" target="_blank">
+                        <img src="headshotPhotos/Sebastian.JPG" alt="Sebastian Lopez">
+                    </a>
+                    <h3>Sebastian Lopez</h3>
+                    <p>Hardware Design and Electrical Development</p>
+                    <p class="member-details">Civil Engineering '28</p>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up" class="contact-section">
+            <h2>Get in Touch</h2>
+            <p>Interested in learning more about our project or collaborating with us? We'd love to hear from you!</p>
+            <div class="contact-info">
+                <p>📍 Location: UC Berkeley, California</p>
+                <p>🔗 GitHub: <a href="https://github.com/aiesha-lanba/aiesha-lanba.github.io" target="_blank">Vendi Project</a></p>
+            </div>
+        </section>
     </div>
-  
+
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -159,7 +170,14 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
 

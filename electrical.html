@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electrical</title>
+    <title>Electrical - Vendi</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://vercel.com/font/geist-sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav>
@@ -16,22 +19,105 @@
                 <li><a href="electrical.html" class="active">Electrical</a></li>
                 <li><a href="mechanical.html">Mechanical</a></li>
                 <li><a href="process.html">Process</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
     </nav>
-    <h1>Electrical Engineering</h1>
-    <p>
-      The electrical system is designed for simplicity and reliability, powered by an Arduino Mega 2560 Rev3:
-    </p>
-    <ul>
-      <li><strong>Servo Motors:</strong> Four 5V high-torque servos controlled by the Arduino.</li>
-      <li><strong>IR Sensor:</strong> Detects successful dispensing and enables retry logic.</li>
-      <li><strong>Keypad:</strong> 1x4 membrane keypad for item selection.</li>
-      <li><strong>LED Strips:</strong> Improve visibility and indicate stock status.</li>
-      <li><strong>Power Supply:</strong> 9V AC-to-DC adapter with onboard buck converter for 5V regulation.</li>
-      <li><strong>Reload Switch:</strong> Toggles motor direction for restocking items.</li>
-    </ul>
+
+    <div class="page-content">
+        <h1 data-aos="fade-down">Electrical Systems</h1>
+        
+        <section data-aos="fade-up">
+            <h2>Power Distribution</h2>
+            <p>The vending machine's electrical system is powered by a 9V AC-to-DC adapter connected to the Arduino, which regulates and distributes 5V to all components through an internal buck converter—ensuring efficient and safe operation of servos, sensors, LEDs, and the keypad.</p>
+            
+            <div class="image-section" data-aos="fade-up">
+                <img src="images/electrical/power-system.jpg" alt="Power Distribution System">
+                <div class="caption">Power distribution and wiring layout</div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Core Components</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Servo Motors</h3>
+                    <p>Four high-torque 5V servo motors drive the spiral coil dispensers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>IR Sensors</h3>
+                    <p>Detects whether an item is dispensed successfully</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>Arduino Mega 2560 Rev3</h3>
+                    <p>Central controller for all electrical components, provides I/O for all components</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Toggle Switch</h3>
+                    <p>Enables reverse motor operation for easy restocking</p>
+                </div>
+            </div>
+
+            <div class="image-gallery" data-aos="fade-up">
+                <div class="gallery-item">
+                    <img src="images/electrical/arduino.jpg" alt="Arduino Setup">
+                    <div class="caption">Arduino Mega 2560 Rev3 with connections</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/electrical/servo-motors.jpg" alt="Servo Motors">
+                    <div class="caption">Servo motor configuration for dispensing</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/electrical/sensors.jpg" alt="IR Sensors">
+                    <div class="caption">IR sensor placement and wiring</div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Specifications</h2>
+            <div class="image-section" data-aos="fade-up">
+                <img src="images/electrical/wiring-diagram.jpg" alt="Wiring Diagram">
+                <div class="caption">Complete system wiring diagram</div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Voltage</th>
+                        <th>Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Servo Motors</td>
+                        <td>5V, 160mA per motor</td>
+                        <td>Rotates the spiral coil to dispense items</td>
+                    </tr>
+                    <tr>
+                        <td>IR Sensor</td>
+                        <td>5V, minimal current draw</td>
+                        <td>Detect item presence</td>
+                    </tr>
+                    <tr>
+                        <td>LED Strip</td>
+                        <td>5V, 140mA</td>
+                        <td>Illuminates the interior, signal low stock</td>
+                    </tr>
+                    <tr>
+                        <td>Arduino Mega 2560 Rev3</td>
+                        <td>9V input -> 5V regulated output</td>
+                        <td>Control logic, I/O, power distribution</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -47,6 +133,13 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>

@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Vendi - Smart Vending Solutions</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://vercel.com/font/geist-sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav>
@@ -16,28 +19,72 @@
                 <li><a href="electrical.html">Electrical</a></li>
                 <li><a href="mechanical.html">Mechanical</a></li>
                 <li><a href="process.html">Process</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="banner" style="background: url('headshotPhotos/IMG_0436.JPG') no-repeat center; background-size: cover; height: 600px;"></div>
-    <div class="banner">
-        
-    <h1>Vendi</h1>
-    <p>
-      Our team built a <strong>custom vending machine</strong> that addresses the lack of accessible, healthy snack options for students on campus. This interdisciplinary project integrates <strong>mechanical engineering</strong>, <strong>electrical systems</strong>, and <strong>software design</strong>, providing hands-on experience in real-world systems integration.
-    </p>
-    <p>
-      The vending machine will:
-    </p>
-    <ul>
-      <li>Use servo-controlled spiral spring dispensers</li>
-      <li>Be enclosed in a modular polycarbonate frame</li>
-      <li>Include an IR sensor to detect successful dispensing</li>
-      <li>Feature a keypad-based user interface and onboard data tracking</li>
-      <li>Be documented and showcased through this website</li>
-    </ul>
+    <main>
+        <section class="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Vendi</h1>
+                <p class="hero-subtitle">A vending machine for the future</p>
+            </div>
+            <div class="hero-image" data-aos="fade-in">
+                <img src="headshotPhotos/group.png" alt="Vendi Team" />
+            </div>
+        </section>
+
+        <section class="features" data-aos="fade-up">
+            <div class="features-content">
+                <h2>Our Innovation</h2>
+                <p class="feature-description">
+                    We've built a <strong>custom vending machine</strong> for students on campus. This interdisciplinary project integrates <strong>mechanical engineering</strong>, <strong>electrical systems</strong>, and <strong>software design</strong>, providing hands-on experience in real-world systems integration.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Smart Dispensing</h3>
+                    <p>Servo-controlled spiral spring dispensers for reliable operation</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Durable Design</h3>
+                    <p>Modular polycarbonate frame for durability and maintenance</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">📡</div>
+                    <h3>Smart Sensors</h3>
+                    <p>IR sensor technology for verified product dispensing</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">⌨️</div>
+                    <h3>User Interface</h3>
+                    <p>Intuitive keypad interface with real-time tracking</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section" data-aos="fade-up">
+            <div class="video-container">
+                <div class="video-content">
+                    <h2>See Vendi in Action</h2>
+                    <p>Watch our demo video.</p>
+                </div>
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Vendi Demo Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-container">
@@ -53,6 +100,13 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>

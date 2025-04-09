@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software</title>
+    <title>Software - Vendi</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://vercel.com/font/geist-sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav>
@@ -16,32 +19,128 @@
                 <li><a href="electrical.html">Electrical</a></li>
                 <li><a href="mechanical.html">Mechanical</a></li>
                 <li><a href="process.html">Process</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
     </nav>
-    <h1>Software Engineering</h1>
-    <h3>Frontend</h3>
-  <p>
-    The frontend refers to the user-facing interface of the vending machine, primarily managed through the membrane keypad and LED feedback system.
-  </p>
-  <ul>
-    <li><strong>Keypad Input:</strong> Users interact with a 1x4 membrane keypad to select items. The interface ensures single keypress detection with a debounce mechanism and locks input during dispensing to avoid conflicts.</li>
-    <li><strong>LED Indicators:</strong> LED strips provide visual feedback—highlighting the machine's operational status and indicating low inventory by changing color when stock drops below threshold.</li>
-    <li><strong>User Feedback:</strong> Keypad responses, visual cues from LEDs, and retry prompts collectively ensure intuitive user interaction.</li>
-  </ul>
 
-  <h3>Backend</h3>
-  <p>
-    The backend includes all logic executed on the Arduino microcontroller to control the vending machine’s behavior.
-  </p>
-  <ul>
-    <li><strong>Motor Control Logic:</strong> When a selection is made, the corresponding servo rotates to dispense the item. The system uses an IR sensor to confirm success and retries automatically if no item is detected.</li>
-    <li><strong>Sensor Handling:</strong> The IR sensor continuously monitors the retrieval zone. If a dispense attempt fails twice, the system unlocks the keypad and allows a new selection.</li>
-    <li><strong>Inventory Management:</strong> The system maintains a local hashmap tracking each item’s remaining quantity. This data controls LED color changes and prevents out-of-stock items from being selected.</li>
-    <li><strong>System Stability:</strong> Includes lockout protection to prevent simultaneous operations, automatic retry cycles, and a reset protocol post-dispense to prepare for the next transaction.</li>
-  </ul>
-    
+    <div class="page-content">
+        <h1 data-aos="fade-down">Software Architecture</h1>
+        
+        <section data-aos="fade-up">
+            <h2>System Overview</h2>
+            <p>The vending machine's software architecture is designed to handle user interaction, item dispensing, inventory tracking, and data logging through a streamlined Arduino-based control system. It ensures smooth integration between the hardware and user interface components, while enabling real-time feedback and fault tolerance.</p>
+            
+            <div class="image-section" data-aos="fade-up">
+                <img src="images/software/system-architecture.jpg" alt="Software Architecture">
+                <div class="caption">High-level system architecture diagram</div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Key Components</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🔢</div>
+                    <h3>Keypad Input Handler</h3>
+                    <p>Interprets button presses and matches inputs with available item slots, communicating with dispensing system</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Motor Control Logic</h3>
+                    <p>Control the servo rotation to trigger item dispensing</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>IR Sensor Monitoring</h3>
+                    <p>Validates item delivery by detecting presence of dispensed product, triggers retry or unlocks keypad based on results</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Data Logger and Inventory Tracker</h3>
+                    <p>Logs item sales, updates inventory counts and triggers LED alerts when stock is low</p>
+                </div>
+            </div>
+
+            <div class="image-gallery" data-aos="fade-up">
+                <div class="gallery-item">
+                    <img src="images/software/keypad-interface.jpg" alt="Keypad Interface">
+                    <div class="caption">Keypad input handling system</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/software/motor-control.jpg" alt="Motor Control">
+                    <div class="caption">Motor control logic implementation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/software/inventory.jpg" alt="Inventory System">
+                    <div class="caption">Inventory tracking dashboard</div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Code Structure</h2>
+            <div class="image-section" data-aos="fade-up">
+                <img src="images/software/code-structure.jpg" alt="Code Structure">
+                <div class="caption">Main program flow and module organization</div>
+            </div>
+            
+            <h3>Key Functions</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Function</th>
+                        <th>Purpose</th>
+                        <th>Implementation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>handleKeypadInput()</td>
+                        <td>Process user input</td>
+                        <td>Interrupt-driven keypad scanning</td>
+                    </tr>
+                    <tr>
+                        <td>controlMotor()</td>
+                        <td>Dispense items</td>
+                        <td>PWM-based servo control</td>
+                    </tr>
+                    <tr>
+                        <td>checkInventory()</td>
+                        <td>Track stock levels</td>
+                        <td>EEPROM-based storage</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Technology Stack</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Technology</th>
+                        <th>Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microcontroller</td>
+                        <td>Arduino Mega 2560 Rev3</td>
+                        <td>Handles input and control logic</td>
+                    </tr>
+                    <tr>
+                        <td>Programming Language</td>
+                        <td>C++</td>
+                        <td>Built on Arduino IDE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
     <footer>
         <div class="footer-container">
             <div class="footer-left">
@@ -56,6 +155,13 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>

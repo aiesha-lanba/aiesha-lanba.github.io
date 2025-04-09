@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical</title>
+    <title>Mechanical - Vendi</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://vercel.com/font/geist-sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav>
@@ -16,21 +19,110 @@
                 <li><a href="electrical.html">Electrical</a></li>
                 <li><a href="mechanical.html" class="active">Mechanical</a></li>
                 <li><a href="process.html">Process</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
     </nav>
-    <h1>Mechanical Engineering</h1>
-    <p>
-      Our mechanical engineering efforts focus on creating a durable, accessible, and modular structure:
-    </p>
-    <ul>
-      <li><strong>Frame & Structure:</strong> Polycarbonate panels reinforced with metal brackets. Dimensions: 20" x 20" x 25".</li>
-      <li><strong>Dispensing Mechanism:</strong> Four spiral springs driven by servo motors, allowing bi-directional rotation for dispensing and restocking.</li>
-      <li><strong>Storage Compartments:</strong> Four snack sections plus a hidden circuitry compartment.</li>
-      <li><strong>Retrieval Door:</strong> Hinged flap to allow access while preventing theft.</li>
-      <li><strong>Accessibility:</strong> Lockable front and back access panels for reloading and repairs.</li>
-    </ul>
+
+    <div class="page-content">
+        <h1 data-aos="fade-down">Mechanical Design</h1>
+        
+        <section data-aos="fade-up">
+            <h2>Structure Overview</h2>
+            <p>The vending machine's mechanical frame is constructed from durable polycarbonate sheets, supported by metal brackets and foam padding to ensure structural integrity, accessibility, and ease of maintenance throughout the system.</p>
+            
+            <div class="image-section" data-aos="fade-up">
+                <img src="images/mechanical/frame.jpg" alt="Vending Machine Frame">
+                <div class="caption">Polycarbonate frame with metal bracket reinforcements</div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧱</div>
+                    <h3>Modular Frame</h3>
+                    <p>Made with layered polycarbonate sheets and reinforced with metal brackets</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌀</div>
+                    <h3>Spiral Coil Dispensing Mechanism</h3>
+                    <p>Spiral spring mechanism for reliable product delivery</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure Retrieval Door</h3>
+                    <p>Hinged inward-opening door prevents unauthorized access</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Maintenance Access Panels</h3>
+                    <p>Front and back access panels for easy servicing and restocking</p>
+                </div>
+            </div>
+
+            <div class="image-gallery" data-aos="fade-up">
+                <div class="gallery-item">
+                    <img src="images/mechanical/spiral-coil.jpg" alt="Spiral Coil Mechanism">
+                    <div class="caption">Spiral coil dispensing mechanism in action</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mechanical/door.jpg" alt="Retrieval Door">
+                    <div class="caption">Secure product retrieval door design</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/mechanical/maintenance.jpg" alt="Maintenance Access">
+                    <div class="caption">Easy-access maintenance panels</div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Design Specifications</h2>
+            <div class="image-section" data-aos="fade-up">
+                <img src="images/mechanical/dimensions.jpg" alt="Machine Dimensions">
+                <div class="caption">Technical specifications and dimensions</div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Material</th>
+                        <th>Dimensions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Frame</td>
+                        <td>Polycarbonate</td>
+                        <td>20" × 30" × 25"</td>
+                    </tr>
+                    <tr>
+                        <td>Spiral Coils</td>
+                        <td>Steel</td>
+                        <td>2" diameter × 24" length</td>
+                    </tr>
+                    <tr>
+                        <td>Product Slots</td>
+                        <td>Acrylic</td>
+                        <td>5" × 5"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Design Features</h2>
+            <ul>
+                <li>Modular design for easy disassembly and repair</li>
+                <li>Lockable panels to secure internal compartments</li>
+                <li>Defined storage sections for snacks and circuitry</li>
+                <li>Accessible refill cutouts on front and back panels</li>
+            </ul>
+        </section>
+    </div>
 
     <footer>
         <div class="footer-container">
@@ -47,5 +139,12 @@
         </div>
     </footer>
 
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>

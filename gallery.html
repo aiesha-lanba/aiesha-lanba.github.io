@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Vendi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://vercel.com/font/geist-sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Vendi</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="electrical.html">Electrical</a></li>
+                <li><a href="mechanical.html">Mechanical</a></li>
+                <li><a href="process.html">Process</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-content">
+        <h1 data-aos="fade-down">Project Gallery</h1>
+        
+        <section data-aos="fade-up">
+            <h2>Development Journey</h2>
+            <div class="photo-grid">
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/planning1.jpg" alt="Initial Planning">
+                    <div class="photo-caption">Initial team planning session</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/design1.jpg" alt="Design Phase">
+                    <div class="photo-caption">CAD design and prototyping</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/build1.jpg" alt="Build Phase">
+                    <div class="photo-caption">Frame construction begins</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/electrical1.jpg" alt="Electrical Work">
+                    <div class="photo-caption">Electrical system assembly</div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Hardware Components</h2>
+            <div class="photo-grid">
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/frame1.jpg" alt="Machine Frame">
+                    <div class="photo-caption">Polycarbonate frame assembly</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/servo1.jpg" alt="Servo Motors">
+                    <div class="photo-caption">Servo motor installation</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/arduino1.jpg" alt="Arduino Setup">
+                    <div class="photo-caption">Arduino control system</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/sensors1.jpg" alt="Sensors">
+                    <div class="photo-caption">IR sensor placement</div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Testing & Implementation</h2>
+            <div class="photo-grid">
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/testing1.jpg" alt="Testing Phase">
+                    <div class="photo-caption">System testing in progress</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/demo1.jpg" alt="Demo Day">
+                    <div class="photo-caption">Project demonstration</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/team1.jpg" alt="Team Work">
+                    <div class="photo-caption">Team collaboration</div>
+                </div>
+                <div class="photo-item" data-aos="fade-up">
+                    <img src="images/gallery/final1.jpg" alt="Final Product">
+                    <div class="photo-caption">Completed vending machine</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">Vendi</span>
+            </div>
+            <div class="footer-center">
+                <p>Alpha Lambda Class – Engineering Project</p>
+                <p>Created by the Vendi Team · UC Berkeley · Spring 2025</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://github.com/aiesha-lanba/aiesha-lanba.github.io" target="_blank">GitHub ↗</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 

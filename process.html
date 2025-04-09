@@ -3,16 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Process</title>
+    <title>Development Process - Vendi</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .content-container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-    </style>
+    <link href="https://vercel.com/font/geist-sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav>
@@ -24,28 +19,117 @@
                 <li><a href="electrical.html">Electrical</a></li>
                 <li><a href="mechanical.html">Mechanical</a></li>
                 <li><a href="process.html" class="active">Process</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Us</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="content-container">
-        <h1>Process</h1>
-        <p>
-            Our engineering project focused on building a cross-disciplinary <strong>vending machine</strong> that addresses the lack of healthy snack access on campus, especially during off-hours.
-        </p>
-        <p>
-            The process began with <strong>design brainstorming and team role assignments</strong>, followed by ordering essential components like servo motors, polycarbonate sheets, and Arduino boards. We <strong>constructed a durable frame</strong> with modular polycarbonate panels, integrated a <strong>spiral spring dispensing system</strong> powered by high-torque servos, and assembled the internal circuitry.
-        </p>
-        <p>
-            We built a <strong>membrane keypad interface</strong> for user selection and connected it to an <strong>Arduino Mega 2560</strong>, which controls servo motion, sensors, and LED feedback. An <strong>IR sensor</strong> ensures successful item dispensing, and a toggle switch allows for convenient reloading.
-        </p>
-        <p>
-            The project involved extensive <strong>software development</strong>, implementing real-time keypad input, automatic retry logic, and inventory tracking with LED alerts. We documented our findings, created a demo video, and launched a portfolio website to showcase our progress.
-        </p>
-        <p>
-            This experience provided valuable lessons in system integration, project management, and multi-disciplinary collaboration—mirroring real-world engineering challenges.
-        </p>
+    <div class="page-content">
+        <h1 data-aos="fade-down">Our Development Journey</h1>
+        
+        <section data-aos="fade-up">
+            <h2>Project Overview</h2>
+            <p>The creation of our vending machine followed a structured, iterative development cycle designed to ensure collaboration, adaptability, and efficiency. The process combined research, prototyping, testing, and refinement—mirroring real-world engineering workflows.</p>
+            
+            <div class="image-section" data-aos="fade-up">
+                <img src="images/process/team-meeting.jpg" alt="Team Planning Session">
+                <div class="caption">Team brainstorming and planning session</div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Development Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <div class="date">Phase 1: Project Planning</div>
+                        <h3>Foundations</h3>
+                        <p>Requirements gathering, team role assignments, and initial project timeline establishment.</p>
+                        <div class="milestone-image">
+                            <img src="images/process/planning.jpg" alt="Initial Planning">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <div class="date">Phase 2: Design & Prototyping</div>
+                        <h3>Design</h3>
+                        <p>Development of CAD models, circuit designs, and software architecture planning.</p>
+                        <div class="milestone-image">
+                            <img src="images/process/prototyping.jpg" alt="Early Prototypes">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <div class="date">Phase 3: Implementation</div>
+                        <h3>Build</h3>
+                        <p>Physical assembly, component integration, and initial software development.</p>
+                        <div class="milestone-image">
+                            <img src="images/process/assembly.jpg" alt="Assembly Process">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <div class="date">Phase 4: Testing & Refinement</div>
+                        <h3>Final</h3>
+                        <p>Comprehensive testing, bug fixes, and system optimization.</p>
+                        <div class="milestone-image">
+                            <img src="images/process/testing.jpg" alt="Testing Phase">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+
+            <div class="image-gallery" data-aos="fade-up">
+                <div class="gallery-item">
+                    <img src="images/process/sprint-planning.jpg" alt="Sprint Planning">
+                    <div class="caption">Weekly sprint planning session</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/process/development.jpg" alt="Development">
+                    <div class="caption">Team working on implementation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/process/testing-review.jpg" alt="Testing Review">
+                    <div class="caption">Testing and review meeting</div>
+                </div>
+            </div>
+        </section>
+
+        <section data-aos="fade-up">
+            <h2>Key Learnings</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Planning</h3>
+                    <p>Importance of thorough planning and requirement analysis</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Communication</h3>
+                    <p>Value of regular team communication and progress tracking</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Iteration</h3>
+                    <p>Benefits of modular design in complex systems</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Quality</h3>
+                    <p>Significance of continuous testing and feedback</p>
+                </div>
+            </div>
+        </section>
     </div>
 
     <footer>
@@ -62,6 +146,13 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
