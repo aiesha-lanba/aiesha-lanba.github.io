@@ -48,10 +48,5 @@
       "dest": "/gallery.html"
     }
   ],
-  "functions": {
-    "app/**/*.js": {
-      "runtime": "@vercel/node"
-    }
-  },
   "trailingSlash": false
 }
