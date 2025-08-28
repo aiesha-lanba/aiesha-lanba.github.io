@@ -1,0 +1,27 @@
+{
+  "name": "vendi-website",
+  "version": "1.0.0",
+  "description": "Vendi - Smart Vending Solutions Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build needed'",
+    "start": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "vending machine",
+    "engineering",
+    "portfolio",
+    "UC Berkeley"
+  ],
+  "author": "Vendi Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aiesha-lanba/aiesha-lanba.github.io.git"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

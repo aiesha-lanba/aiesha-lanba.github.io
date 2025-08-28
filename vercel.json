@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.{jpg,jpeg,png,gif,svg,ico}",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/software",
+      "dest": "/software.html"
+    },
+    {
+      "src": "/electrical",
+      "dest": "/electrical.html"
+    },
+    {
+      "src": "/mechanical",
+      "dest": "/mechanical.html"
+    },
+    {
+      "src": "/process",
+      "dest": "/process.html"
+    },
+    {
+      "src": "/gallery",
+      "dest": "/gallery.html"
+    }
+  ],
+  "functions": {
+    "app/**/*.js": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "trailingSlash": false
+}
